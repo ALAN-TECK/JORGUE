@@ -191,7 +191,7 @@ MIP2=$(wget -qO- ifconfig.me)
 }  
 function_verify () {
   ### INTALAR VERCION DE SCRIPT
-  v1=$(curl -sSL "https://raw.githubusercontent.com/vpscr/ALANTECK/main/Huesos/Vercion")
+  v1=$(curl -sSL "https://raw.githubusercontent.com/ALAN-TECK/JORGUE/main/VPS/Vercion")
   echo "$v1" > /etc/versin_script
   [[ ! -e /usr/local/lib/lsystembin2 ]] && touch /usr/local/lib/lsystembin2
  
@@ -217,7 +217,7 @@ wget -O /bin/rebootnb https://www.dropbox.com/s/4zsc3vfn5d9oi36/rebootnb &> /dev
 chmod +x /bin/rebootnb 
 wget -O /bin/resetsshdrop https://www.dropbox.com/s/244tj0ffe62hq4l/resetsshdrop &> /dev/null
 chmod +x /bin/resetsshdrop
-wget -O /etc/versin_script_new https://raw.githubusercontent.com/vpscr/ALANTECK/main/Huesos/Vercion &>/dev/null
+wget -O /etc/versin_script_new https://raw.githubusercontent.com/ALAN-TECK/JORGUE/main/VPS/Vercion &>/dev/null
 msg -bar2
 echo '#!/bin/sh -e' > /etc/rc.local
 sudo chmod +x /etc/rc.local
@@ -238,7 +238,7 @@ echo 'echo "" '>> .bashrc
 echo 'echo -e "\033[92m        RESELLER : $mess1 "'>> .bashrc
 echo 'echo "" '>> .bashrc                                               
 echo 'echo -e "\033[97m   PARA MOSTAR PANEL BASH ESCRIBA:  sudo menu "'>> .bashrc
-echo 'wget -O /etc/versin_script_new https://raw.githubusercontent.com/vpscr/ALANTECK/main/Huesos/Vercion &>/dev/null'>> .bashrc
+echo 'wget -O /etc/versin_script_new https://raw.githubusercontent.com/ALAN-TECK/JORGUE/main/VPS/Vercion &>/dev/null'>> .bashrc
 echo 'echo ""'>> .bashrc
 echo -e "                   @ALANTORUS 94962948255       "
 echo -e "         COMANDO PRINCIPAL PARA ENTRAR AL PANEL "
@@ -326,7 +326,7 @@ curl -s --max-time 10 -d "chat_id=$IDB2&disable_web_page_preview=1&text=$MSG" $U
 echo -e "\033[1;34mSE ENVIO MENSAJE DE PRUEBA SI NO LLEGA CONTACTE A @ALANTECK "
 }
 fun_ip
-wget -O /usr/bin/trans https://raw.githubusercontent.com/vpscr/ALANTECK/main/Huesos/trans &> /dev/null
+wget -O /usr/bin/trans https://raw.githubusercontent.com/ALAN-TECK/JORGUE/main/VPS/trans &> /dev/null
 wget -O /bin/Desbloqueo.sh https://raw.githubusercontent.com/VPS-MX/VPS-MX-8.0/master/ArchivosUtilitarios/Desbloqueo.sh &> /dev/null
 chmod +x /bin/Desbloqueo.sh
 wget -O /bin/monitor.sh https://raw.githubusercontent.com/VPS-MX/VPS-MX-8.0/master/ArchivosUtilitarios/Monitor-Service/monitor.sh &> /dev/null
